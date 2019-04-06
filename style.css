@@ -692,3 +692,272 @@ section p {
 /* ---------------------- */
 
 
+/* Projets */
+#portfolio {
+    margin-top: 3em;
+    margin-bottom: -2em;
+}
+
+li {
+    position: relative;
+}
+.liens ul{
+display: flex;
+justify-content: center;
+margin-top: 20px;
+padding: 0;
+list-style-type: none;
+}
+
+.lien_projet a {
+text-decoration: none;
+color: #64686d;
+background-color: #e5e5e5;
+padding: 10px 30px 10px 30px;
+text-align: center;
+}
+
+.lien_projet a:hover {
+    color: rgb(255, 255, 255);
+    background-color: #5cadd3;
+    padding: 10px 30px 10px 30px;
+    box-shadow: 0 -3px #4494bb inset;
+}
+
+
+#all_works {
+color: rgb(255, 255, 255);
+background-color: #5cadd3;
+padding: 10px 30px 10px 30px;
+box-shadow: 0 -3px #4494bb inset;
+}
+
+.lien_projet .fleche {
+margin-top: -2px;
+left: 0;
+margin-left: 50px;
+font-size: 2em;
+color: #4494bb;
+opacity: 1;
+}
+
+
+.fleche {
+    opacity: 0;
+    position: absolute;
+}
+
+
+
+
+#img_works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 50px;
+    margin-bottom: 59px;
+    color: white;
+}
+
+.photo img {
+    display:block;
+}
+
+.photo {
+    width: 20%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    position: relative;
+    transition-duration: 1.3s;
+}
+.photo_title {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition-duration: 1.3s;
+}
+
+.photo i {
+    transition-duration: 1.3s;
+}
+
+.photo_description  {
+    position: relative;
+    padding-left: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.photo_title h3 {
+    font-size: 0.9em;
+    padding-top: 5px;
+    margin-bottom: 0;
+    padding-bottom: 3px;
+}
+.photo_title p {
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 1.3em;
+    color: white;
+    margin: 0;
+    padding-bottom: 15px;
+}
+.photo_description i {
+    color: white;
+    font-size: 0.8em;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 7px;
+    background-color: #5cadd3;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: -1.2%;
+    margin-top: -10px;
+    margin-right: 20px;
+    
+}
+.photo:hover .photo_title {
+     opacity: 1;
+     
+}
+.photo:hover i {
+    opacity: 1;
+}
+
+@media all and (max-width: 600px) {
+    #portfolio {
+        width: 100%;
+        margin-bottom: 116%;
+    }
+
+    .photo {
+        float: left;
+        padding: 31px;
+        width: 57%;
+    }
+
+    .photo_description {
+    float: left;
+    top: -31px;
+    left: 31px;
+    width: 69.4%;
+    font-size: 14px;
+    }
+    .photo_description i {
+    font-size: 12px;
+    }
+
+    .lien_projet a {
+    padding: 10px;
+    font-size: 8px;
+}
+
+.lien_projet .fleche {
+    margin-left: 41px;
+}
+}
+
+@media all and (min-width: 600px) and (max-width: 800px) {
+    #portfolio {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    .liens ul {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .lien_projet a {
+        padding: 4px;
+        font-size: 0.7em;
+    }
+    .lien_projet a:hover { 
+        padding: 4px 4px 4px 4px;
+        
+    }
+    .lien_projet .fleche {
+        margin-top: -2px;
+        margin-left: 43px;
+        font-size: 1.8em;
+    }
+    .photo {
+        float: left;
+        padding: 28px;
+        width: 38%;
+    }
+    .photo_description { 
+       float: left;
+       top: -28px;
+       left: 28px;
+       width: 78.5%;
+       font-size: 20px;
+    }
+    
+   .photo_description i {
+    font-size: 9.3px;
+    background-color: #5cadd3;
+    border: 1px solid white;
+    }
+
+    .photo_title {
+        opacity: 0;
+    }
+    .photo_title h3 {
+        font-size: 0.6em;
+        margin: 0;
+        padding-top: 2px;
+        padding-bottom: 1px;
+    }
+    .photo_title p {
+        padding: 0;
+        font-size: 0.5em;
+        line-height: 1.5em;
+        padding-bottom: 3px;
+        margin: 0;    
+    }
+} 
+
+@media all and (min-width: 800px) and (max-width: 1599px) {
+    .photo {
+        float: left;
+        padding: 3px;
+        width: 30%;
+}
+
+.photo_description {
+    float: left;
+    bottom: 4px;
+    left: 3px;
+    width: 97.4%;
+    font-size: 19px;
+}
+
+.photo_description i {
+    font-size: 13.3px;
+    margin-top: -4px;
+    margin-right: 25px;
+    margin-left: -13px;
+    padding: 7px;
+    background-color: #5cadd3;
+    border: 1px solid white;
+}
+}
+
+@media all and (min-width: 1600px) {
+    .lien_projet .fleche {
+     margin-top: -7px;
+    font-size: 1.7em;
+    margin-left: 62px;
+}
+.photo_description i {
+
+    font-size: 13.3px;
+    margin-top: -4px;
+    margin-right: 25px;
+    margin-left: -13px;
+    padding: 7px;
+
+}
+}
