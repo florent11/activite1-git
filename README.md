@@ -6,13 +6,13 @@ Le site doit tenir sur une page avec un menu qui reste visible, en haut de la pa
 
 Les différentes sections attendues sont :
 
-    - Un premier écran d'accueil de bienvenue, très visuel
+    Un premier écran d'accueil de bienvenue, très visuel
 
-   - La liste des services offerts par l'agence
+    La liste des services offerts par l'agence
 
-   - Des exemples de projets déjà réalisés
+    Des exemples de projets déjà réalisés
 
-    - Une carte avec un formulaire de contact (on ne vous demande pas de faire marcher le formulaire, juste de l'afficher).
+    Une carte avec un formulaire de contact (on ne vous demande pas de faire marcher le formulaire, juste de l'afficher).
 
 Le site sera réalisé en HTML et CSS (sans framework tel que Bootstrap).
 
