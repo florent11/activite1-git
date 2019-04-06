@@ -244,3 +244,31 @@
                         	</div>
       			</div>
       		</div>
+
+      		<!--Contact-->
+			<div id="contact">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.443217189348!2d2.3454482313659555!3d48.87305179999397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1534247157165" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div id="map_veiling"></div>
+				
+				<form method="post" action="traitement.php">
+                    <fieldset>
+                        <div id="infos">
+                            <h3>Contact Info</h3>
+                            <p id="web">WebAgency SAS</p>
+                            <p id="adresse">25 rue de Hauteville 75010 Paris</p>
+                            <p id="tel">Tél: 01 02 03 04 05</p>
+                    	</div>
+                        <div id="info_user">
+                           <p> <input type="text" name="name" placeholder="Name" size="30" maxlength="30"> </p>
+                            <p> <input type="email" name="email" placeholder="Email" size="30" maxlength="30"> </p>
+                           <p> <input type="text" name="subject" placeholder="Subject" size="30" maxlength="30"> </p>
+                            <p> <textarea name="message" placeholder="Message"></textarea> </p>
+                            <p> <button name="sendmessage" type="submit" value="Send Message"> Send Message</button> </p>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+		</div>
+	</body>
+
+</html>
